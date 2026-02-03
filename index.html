@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasty Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo-title">
+  <img src="images/logo.png" class="logo">
+  Tasty Restaurant
+</h1>
+
+  <nav>
+    <a href="#home">Home 🏠</a>
+    <a href="#menu">Menu 🍕</a>
+    <a href="#about">About ℹ️</a>
+    <a href="#contact">Contact 📞</a>
+  </nav>
+  <input type="text" id="searchInput" placeholder="Search food...">
+
+</header>
+
+<section id="home" class="hero">
+  <h2>The Best Food in Town ✨</h2>
+  <button onclick="scrollToMenu()">View Menu 🍴</button>
+</section>
+
+<section id="menu" class="menu">
+  <h2>Our Menu 😋</h2>
+  <div class="menu-cards"></div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us 👨‍🍳</h2>
+  <p>
+    We prepare fresh and delicious meals every day.  
+    Our mission is to bring happiness through great food and a warm atmosphere.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact 📩</h2>
+  <p>Email: info@tastyrestaurant.com</p>
+  <p>Phone: +1 234 567 89</p>
+  <div class="socials">
+  <a href="#"><img src="images/social.png"></a>
+  <a href="#"><img src="images/twitter.png"></a>
+  <a href="#"><img src="images/facebook.png"></a>
+</div>
+
+</section>
+
+<footer>
+  <p>© 2026 Tasty Restaurant ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

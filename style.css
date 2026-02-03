@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+nav a {
+  color: #ddd;
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* Sections */
+
+section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+.hero h2 {
+  font-size: 42px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #6c7cff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #8894ff;
+}
+
+/* Menu Cards */
+
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.menu-card {
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.18);
+}
+
+.menu-card h3 {
+  font-size: 22px;
+  color: #aab4ff;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.4);
+}
+section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-card img {
+  height: 190px;      
+  object-fit: cover;  
+  border-radius: 14px;
+  display: block;
+}
+.price {
+  font-size: 18px;
+  color: #ffd166;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order-btn {
+  opacity: 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #7f5af0, #2cb67d);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu-card:hover .order-btn {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+.logo-title {
+  text-shadow: 0 0 15px rgba(255,255,255,0.15);
+}
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+}
+
+.socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+}
+
+.socials a img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.socials a:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255,255,255,0.18);
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card img {
+    height: 150px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+#searchInput {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 30;
+  width: 220px;
+  backdrop-filter: blur(100);
+}
